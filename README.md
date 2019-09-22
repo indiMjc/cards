@@ -1,2 +1,2 @@
 # cards
-Animated card footer
+Drop down nav bar with animated cards inside

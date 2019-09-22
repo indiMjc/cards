@@ -3,104 +3,14 @@
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    min-height: 100%;
-    background: @bg-color;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0;
+    padding: 0 5rem;
+    min-height: 100%;
+    background: @bg-color;
     font-family: consolas;
 
-    .container {
-        width: 100rem;
-        position: relative;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .card {
-        position: relative;
-
-        .face {
-            width: 30rem;
-            height: 20rem;
-            transition: 0.5s;
-        }
-
-        .face.face1 {
-            position: relative;
-            background: @bg-color;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 1;
-            transform: translateY(10rem);
-
-            .content {
-            opacity: 0.4;
-            transition: 0.5s;
-
-            i {
-                font-size: 8rem;
-                color: @icon-color;
-                max-width: 10rem;
-            }
-
-            h3 {
-                margin: 1rem 0 0;
-                padding: 0;
-                color: @icon-color;
-                text-align: center;
-                font-size: 1.5rem;
-            }
-            }
-
-            .content:hover {
-                opacity: 1;
-            }
-        }
-
-        .face.face2 {
-            position: relative;
-            background: @card-face-color;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 1rem;
-            box-sizing: border-box;
-            box-shadow: 0 2rem 5rem rgba(0,0,0,0.8);
-            transform: translateY(-10rem);
-
-            .content p {
-                font-size: 1.6rem;
-                margin: 0;
-                padding: 0;
-            }
-
-            .content a {
-                margin: 1.5rem 0 1rem;
-                display: inline-block;
-                text-decoration: none;
-                font-weight: 900;
-                color: @bg-color;
-                padding: 0.5rem;
-                border: 1px solid @bg-color;
-            }
-
-            .content a:hover {
-                background: @bg-color;
-                color: @card-face-color;
-            }
-        }
-    }
-
-    .card:hover .face.face1 {
-        background: rgba(255, 153, 0, 0.767);
-        transform: translateY(0);
-    }
-
-    .card:hover .face.face2 {
-        transform: translateY(0);
-    }
+    .animated-card(@bg-color, @icon-color, @card-face-color, @expanded-card-bg)
 }

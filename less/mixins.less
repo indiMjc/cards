@@ -1,0 +1,106 @@
+.animated-card(@bg-color, @icon-color, @card-face-color, @expanded-card-bg) {
+
+    .card-container {
+        display: flex;
+        justify-content: space-between;
+
+        width: 100rem;
+        position: relative;
+
+        .card {
+            position: relative;
+
+            .face {
+                width: 30rem;
+                height: 20rem;
+                transition: 0.5s;
+            }
+
+            .face.face1 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                background: @bg-color;
+                z-index: 1;
+                transform: translateY(10rem);
+
+                    .card-content {
+                    opacity: 0.4;
+                    transition: 0.5s;
+
+                    i {
+                        font-size: 8rem;
+                        color: @icon-color;
+                        max-width: 10rem;
+                    }
+
+                    h3 {
+                        margin: 1rem 0 0;
+                        padding: 0;
+                        color: @icon-color;
+                        text-align: center;
+                        font-size: 1.5rem;
+                    }
+                }
+
+                .card-content:hover {
+                    opacity: 1;
+                }
+            }
+
+            .face.face2 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                background: @card-face-color;
+                padding: 1rem;
+                box-sizing: border-box;
+                box-shadow: 0 2rem 5rem rgba(0,0,0,0.8);
+                transform: translateY(-10rem);
+
+                .card-content p {
+                    font-size: 1.6rem;
+                    margin: 0;
+                    padding: 0;
+                }
+
+                .card-content .links {
+
+                    display: flex;
+                    justify-content: space-evenly;
+
+                    a {
+                        margin: 1.5rem 0 1rem;
+                        width: 100%;
+                        max-width: 50%;
+                        margin: 0.5rem;
+                        display: inline-block;
+                        text-align: center;
+                        text-decoration: none;
+                        font-weight: 900;
+                        font-size: 1rem;
+                        color: @bg-color;
+                        padding: 0.5rem;
+                        border: 1px solid @bg-color;
+                    }
+                }
+
+                .card-content a:hover {
+                    background: @bg-color;
+                    color: @card-face-color;
+                }
+            }
+        }
+
+        .card:hover .face.face1 {
+            background: @expanded-card-bg;
+            transform: translateY(0);
+        }
+
+        .card:hover .face.face2 {
+            transform: translateY(0);
+        }
+    }
+}

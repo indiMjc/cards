@@ -2,90 +2,99 @@
   font-size: 62.5%;
 }
 body {
-  margin: 0;
-  padding: 0;
-  min-height: 100%;
-  background: #333333;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0;
+  padding: 0 5rem;
+  min-height: 100%;
+  background: #333333;
   font-family: consolas;
 }
-body .container {
-  width: 100rem;
-  position: relative;
+body .card-container {
   display: flex;
   justify-content: space-between;
-}
-body .card {
+  width: 100rem;
   position: relative;
 }
-body .card .face {
+body .card-container .card {
+  position: relative;
+}
+body .card-container .card .face {
   width: 30rem;
   height: 20rem;
   transition: 0.5s;
 }
-body .card .face.face1 {
-  position: relative;
-  background: #333333;
+body .card-container .card .face.face1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  background: #333333;
   z-index: 1;
   transform: translateY(10rem);
 }
-body .card .face.face1 .content {
+body .card-container .card .face.face1 .card-content {
   opacity: 0.4;
   transition: 0.5s;
 }
-body .card .face.face1 .content i {
+body .card-container .card .face.face1 .card-content i {
   font-size: 8rem;
   color: #000000;
   max-width: 10rem;
 }
-body .card .face.face1 .content h3 {
+body .card-container .card .face.face1 .card-content h3 {
   margin: 1rem 0 0;
   padding: 0;
   color: #000000;
   text-align: center;
   font-size: 1.5rem;
 }
-body .card .face.face1 .content:hover {
+body .card-container .card .face.face1 .card-content:hover {
   opacity: 1;
 }
-body .card .face.face2 {
-  position: relative;
-  background: #ffffff;
+body .card-container .card .face.face2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  background: #ffffff;
   padding: 1rem;
   box-sizing: border-box;
   box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.8);
   transform: translateY(-10rem);
 }
-body .card .face.face2 .content p {
+body .card-container .card .face.face2 .card-content p {
   font-size: 1.6rem;
   margin: 0;
   padding: 0;
 }
-body .card .face.face2 .content a {
+body .card-container .card .face.face2 .card-content .links {
+  display: flex;
+  justify-content: space-evenly;
+}
+body .card-container .card .face.face2 .card-content .links a {
   margin: 1.5rem 0 1rem;
+  width: 100%;
+  max-width: 50%;
+  margin: 0.5rem;
   display: inline-block;
+  text-align: center;
   text-decoration: none;
   font-weight: 900;
+  font-size: 1rem;
   color: #333333;
   padding: 0.5rem;
   border: 1px solid #333333;
 }
-body .card .face.face2 .content a:hover {
+body .card-container .card .face.face2 .card-content a:hover {
   background: #333333;
   color: #ffffff;
 }
-body .card:hover .face.face1 {
+body .card-container .card:hover .face.face1 {
   background: rgba(255, 153, 0, 0.767);
   transform: translateY(0);
 }
-body .card:hover .face.face2 {
+body .card-container .card:hover .face.face2 {
   transform: translateY(0);
 }

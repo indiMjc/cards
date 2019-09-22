@@ -1,2 +1,2 @@
 # cards
-Animated card boilerplate
+Animated card footer

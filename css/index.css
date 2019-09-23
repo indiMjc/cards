@@ -207,7 +207,7 @@ html {
 }
 .dropdown:hover .dropdown-content .drop-box .card-container .card:hover .face.face2 {
   transform: translateY(0);
-  background-image: url("img/white-texture.png");
+  background-image: url("../img/white-textureb.png");
 }
 @media screen and (max-width: 500px) {
   .dropdown:hover .dropdown-content .drop-box {
@@ -259,8 +259,9 @@ nav div {
     flex-direction: column;
   }
 }
-#background {
-  background-image: url("..\img\white-textureb.png");
-  height: 30rem;
-  border: 1px solid green;
+.test {
+  border: 1px solid red;
+  height: 100rem;
+  background-image: url("../img/white-textureb.png");
+  background-size: cover;
 }

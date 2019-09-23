@@ -4,6 +4,8 @@
 html {
   font-size: 62.5%;
   font-family: consolas;
+  background-image: 'img\white-textureb.png';
+  background-repeat: repeat;
 }
 .dropdown {
   display: flex;
@@ -39,13 +41,14 @@ html {
 .dropdown-content {
   display: none;
   position: absolute;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0rem 1.6rem 1.6rem 0rem rgba(0, 0, 0);
   z-index: 1;
 }
 .dropdown:hover .dropdown-content {
   display: flex;
   justify-content: center;
   width: 100vw;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.8);
 }
 .dropdown:hover .dropdown-content .drop-box {
   display: flex;
@@ -204,12 +207,13 @@ html {
 }
 .dropdown:hover .dropdown-content .drop-box .card-container .card:hover .face.face2 {
   transform: translateY(0);
+  background-image: url("img/white-texture.png");
 }
 @media screen and (max-width: 500px) {
   .dropdown:hover .dropdown-content .drop-box {
     flex-direction: column;
-    max-height: 100vh;
-    margin: 63rem 0 0;
+    height: auto;
+    margin: 200rem 0 0;
   }
 }
 nav {
@@ -254,4 +258,9 @@ nav div {
   nav div {
     flex-direction: column;
   }
+}
+#background {
+  background-image: url("..\img\white-textureb.png");
+  height: 30rem;
+  border: 1px solid green;
 }

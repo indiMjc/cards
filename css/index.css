@@ -4,8 +4,9 @@
 html {
   font-size: 62.5%;
   font-family: consolas;
-  background-image: 'img\white-textureb.png';
-  background-repeat: repeat;
+}
+.top-bar {
+  opacity: 0.9;
 }
 .dropdown {
   display: flex;
@@ -130,7 +131,7 @@ html {
 .dropdown:hover .dropdown-content .drop-box .card-container .card .face.face2 .card-content .dev #dBielejec h5,
 .dropdown:hover .dropdown-content .drop-box .card-container .card .face.face2 .card-content .dev #tNgo h5,
 .dropdown:hover .dropdown-content .drop-box .card-container .card .face.face2 .card-content .dev #mCurry h5 {
-  border-right: 0.25px solid #ff9900;
+  border-right: 2px solid #ff9900;
 }
 .dropdown:hover .dropdown-content .drop-box .card-container .card .face.face2 .card-content .dev #zSmith p,
 .dropdown:hover .dropdown-content .drop-box .card-container .card .face.face2 .card-content .dev #dEaster p,
@@ -141,21 +142,21 @@ html {
 .dropdown:hover .dropdown-content .drop-box .card-container .card .face.face2 .card-content .dev #dBielejec p,
 .dropdown:hover .dropdown-content .drop-box .card-container .card .face.face2 .card-content .dev #tNgo p,
 .dropdown:hover .dropdown-content .drop-box .card-container .card .face.face2 .card-content .dev #mCurry p {
-  border-right: 0.25px solid #ff9900;
+  border-right: 2px solid #ff9900;
 }
 .dropdown:hover .dropdown-content .drop-box .card-container .card .face.face2 .card-content .dev #zSmith h5,
 .dropdown:hover .dropdown-content .drop-box .card-container .card .face.face2 .card-content .dev #dEaster h5,
 .dropdown:hover .dropdown-content .drop-box .card-container .card .face.face2 .card-content .dev #oOredola h5,
 .dropdown:hover .dropdown-content .drop-box .card-container .card .face.face2 .card-content .dev #dBielejec h5,
 .dropdown:hover .dropdown-content .drop-box .card-container .card .face.face2 .card-content .dev #mCurry h5 {
-  border-left: 0.25px solid #ff9900;
+  border-left: 2px solid #ff9900;
 }
 .dropdown:hover .dropdown-content .drop-box .card-container .card .face.face2 .card-content .dev #zSmith p,
 .dropdown:hover .dropdown-content .drop-box .card-container .card .face.face2 .card-content .dev #dEaster p,
 .dropdown:hover .dropdown-content .drop-box .card-container .card .face.face2 .card-content .dev #oOredola p,
 .dropdown:hover .dropdown-content .drop-box .card-container .card .face.face2 .card-content .dev #dBielejec p,
 .dropdown:hover .dropdown-content .drop-box .card-container .card .face.face2 .card-content .dev #mCurry p {
-  border-left: 0.25px solid #ff9900;
+  border-left: 2px solid #ff9900;
 }
 .dropdown:hover .dropdown-content .drop-box .card-container .card .face.face2 .card-content .dev .individual {
   width: 100%;
@@ -176,7 +177,7 @@ html {
   justify-content: space-evenly;
 }
 .dropdown:hover .dropdown-content .drop-box .card-container .card .face.face2 .card-content .links a {
-  margin: 1.5rem 0.25rem 0;
+  margin: 1.5rem 0.5rem 0;
   width: 100%;
   height: 3rem;
   max-width: 45%;

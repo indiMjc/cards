@@ -5,27 +5,6 @@ html {
   font-size: 62.5%;
   font-family: consolas;
 }
-nav {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  height: 6rem;
-  font-size: 3rem;
-  background: #ff9900;
-  border-bottom-left-radius: 2rem;
-  border-bottom-right-radius: 2rem;
-}
-nav .nav-ele a {
-  text-decoration: none;
-  color: #333333;
-  font-weight: 900;
-  margin: 0 5.7rem;
-}
-nav div {
-  display: flex;
-  justify-content: space-between;
-}
 .dropdown {
   display: flex;
   align-items: center;
@@ -35,6 +14,11 @@ nav div {
   background: #333333;
   border-top-right-radius: 2rem;
   border-top-left-radius: 2rem;
+}
+@media screen and (max-width: 500px) {
+  .dropdown {
+    justify-content: center;
+  }
 }
 .dropdown .about-us button {
   width: 13rem;
@@ -46,6 +30,12 @@ nav div {
   border: none;
   border-radius: 0.8rem;
 }
+@media screen and (max-width: 500px) {
+  .dropdown .about-us button {
+    font-weight: 600;
+    margin: 0;
+  }
+}
 .dropdown-content {
   display: none;
   position: absolute;
@@ -55,7 +45,7 @@ nav div {
 .dropdown:hover .dropdown-content {
   display: flex;
   justify-content: center;
-  width: 100%;
+  width: 100vw;
 }
 .dropdown:hover .dropdown-content .drop-box {
   display: flex;
@@ -214,4 +204,54 @@ nav div {
 }
 .dropdown:hover .dropdown-content .drop-box .card-container .card:hover .face.face2 {
   transform: translateY(0);
+}
+@media screen and (max-width: 500px) {
+  .dropdown:hover .dropdown-content .drop-box {
+    flex-direction: column;
+    max-height: 100vh;
+    margin: 63rem 0 0;
+  }
+}
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 6rem;
+  font-size: 3rem;
+  background: #ff9900;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+@media screen and (max-width: 500px) {
+  nav {
+    height: auto;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+  }
+}
+nav a {
+  text-decoration: none;
+  color: #333333;
+  font-weight: 900;
+  margin: 0 5.7rem;
+}
+@media screen and (max-width: 500px) {
+  nav a {
+    text-align: center;
+    margin-top: 1rem;
+  }
+}
+nav a:active {
+  color: #ff9900;
+  background: #333333;
+}
+nav div {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 500px) {
+  nav div {
+    flex-direction: column;
+  }
 }

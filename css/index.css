@@ -5,14 +5,10 @@ html {
   font-size: 62.5%;
   font-family: consolas;
 }
-.top-bar {
-  opacity: 0.9;
-}
 .dropdown {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  position: relative;
   height: 4.5rem;
   background: #333333;
   border-top-right-radius: 2rem;
@@ -148,14 +144,16 @@ html {
 .dropdown:hover .dropdown-content .drop-box .card-container .card .face.face2 .card-content .dev #dEaster h5,
 .dropdown:hover .dropdown-content .drop-box .card-container .card .face.face2 .card-content .dev #oOredola h5,
 .dropdown:hover .dropdown-content .drop-box .card-container .card .face.face2 .card-content .dev #dBielejec h5,
-.dropdown:hover .dropdown-content .drop-box .card-container .card .face.face2 .card-content .dev #mCurry h5 {
+.dropdown:hover .dropdown-content .drop-box .card-container .card .face.face2 .card-content .dev #mCurry h5,
+.dropdown:hover .dropdown-content .drop-box .card-container .card .face.face2 .card-content .dev #tNgo h5 {
   border-left: 2px solid #ff9900;
 }
 .dropdown:hover .dropdown-content .drop-box .card-container .card .face.face2 .card-content .dev #zSmith p,
 .dropdown:hover .dropdown-content .drop-box .card-container .card .face.face2 .card-content .dev #dEaster p,
 .dropdown:hover .dropdown-content .drop-box .card-container .card .face.face2 .card-content .dev #oOredola p,
 .dropdown:hover .dropdown-content .drop-box .card-container .card .face.face2 .card-content .dev #dBielejec p,
-.dropdown:hover .dropdown-content .drop-box .card-container .card .face.face2 .card-content .dev #mCurry p {
+.dropdown:hover .dropdown-content .drop-box .card-container .card .face.face2 .card-content .dev #mCurry p,
+.dropdown:hover .dropdown-content .drop-box .card-container .card .face.face2 .card-content .dev #tNgo p {
   border-left: 2px solid #ff9900;
 }
 .dropdown:hover .dropdown-content .drop-box .card-container .card .face.face2 .card-content .dev .individual {
@@ -214,7 +212,6 @@ html {
   .dropdown:hover .dropdown-content .drop-box {
     flex-direction: column;
     height: auto;
-    margin: 200rem 0 0;
   }
 }
 nav {

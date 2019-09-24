@@ -5,14 +5,16 @@ html {
   font-size: 62.5%;
   font-family: consolas;
 }
+.top-bar {
+  display: flex;
+  justify-content: flex-end;
+  width: 100vw;
+}
 .dropdown {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   height: 4.5rem;
-  background: #333333;
-  border-top-right-radius: 2rem;
-  border-top-left-radius: 2rem;
 }
 @media screen and (max-width: 500px) {
   .dropdown {
@@ -51,7 +53,7 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 100vw;
   margin: 35rem 0 0;
   padding: 5rem 5rem;
   min-height: auto;
@@ -212,48 +214,6 @@ html {
   .dropdown:hover .dropdown-content .drop-box {
     flex-direction: column;
     height: auto;
-  }
-}
-nav {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  height: 6rem;
-  font-size: 3rem;
-  background: #ff9900;
-  border-bottom-left-radius: 2rem;
-  border-bottom-right-radius: 2rem;
-}
-@media screen and (max-width: 500px) {
-  nav {
-    height: auto;
-    font-size: 2rem;
-    padding-bottom: 1rem;
-  }
-}
-nav a {
-  text-decoration: none;
-  color: #333333;
-  font-weight: 900;
-  margin: 0 5.7rem;
-}
-@media screen and (max-width: 500px) {
-  nav a {
-    text-align: center;
-    margin-top: 1rem;
-  }
-}
-nav a:active {
-  color: #ff9900;
-  background: #333333;
-}
-nav div {
-  display: flex;
-  justify-content: space-between;
-}
-@media screen and (max-width: 500px) {
-  nav div {
-    flex-direction: column;
+    margin: 200rem 0 0;
   }
 }
